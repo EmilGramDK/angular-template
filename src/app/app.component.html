@@ -1,0 +1,15 @@
+<ngx-sonner-toaster
+  theme="light"
+  richColors
+  position="top-center"
+  offset="20px"
+/>
+
+<ngx-layout
+  logo="logo.png"
+  [loading]="appService.isLoading || !authService.hasToken"
+  [renderApp]="!appService.initialLoading && authService.hasToken"
+  [sidebarFooter]="footer"
+  (sidebarFooterOnClick)="showUser()"
+>
+</ngx-layout>
