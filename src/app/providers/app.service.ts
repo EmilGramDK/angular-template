@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-
-import { AuthService } from '@emilgramdk/ngx-auth-service';
 import { APIService } from './api.service';
 
 @Injectable({
@@ -10,17 +8,14 @@ export class AppService {
   public initialLoading = true;
   public isLoading = true;
 
-  constructor(
-    private apiService: APIService,
-    private authService: AuthService,
-  ) {
+  constructor(private apiService: APIService) {
     this.initialize();
   }
 
   private async initialize() {
-    await Promise.all([
-      // NOTE: Run all init api call at once.
-    ]);
+    const [users] = await Promise.all([this.apiService.getAllUsers()]);
+
+    console.log('Fetched all users:', users);
 
     this.toggleLoading(false, true);
   }

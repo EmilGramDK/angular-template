@@ -6,10 +6,8 @@
 />
 
 <ngx-layout
-  logo="logo.png"
-  [loading]="appService.isLoading || !authService.hasToken"
-  [renderApp]="!appService.initialLoading && authService.hasToken"
-  [sidebarFooter]="footer"
-  (sidebarFooterOnClick)="showUser()"
+  [loading]="appService.isLoading"
+  [renderApp]="!appService.initialLoading"
 >
+  <ng-template #topbar> Topbar Views </ng-template>
 </ngx-layout>

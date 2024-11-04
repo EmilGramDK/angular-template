@@ -1,6 +1,6 @@
 {
   "name": "template",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0 --port 4200",
@@ -18,8 +18,8 @@
     "@angular/platform-browser": "^18.1.0",
     "@angular/platform-browser-dynamic": "^18.1.0",
     "@angular/router": "^18.1.0",
-    "@emilgramdk/ngx-auth-service": "^1.0.12",
-    "@emilgramdk/ngx-layout": "^1.0.48",
+    "@emilgramdk/ngx-auth-service": "latest",
+    "@emilgramdk/ngx-layout": "latest",
     "ngx-sonner": "^2.0.2",
     "primeicons": "^7.0.0",
     "primeng": "^17.18.10",

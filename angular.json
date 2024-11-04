@@ -25,10 +25,10 @@
               }
             ],
             "styles": [
+              "node_modules/primeng/resources/primeng.min.css",
               "node_modules/@emilgramdk/ngx-layout/lib/assets/styles.css",
               "node_modules/@emilgramdk/ngx-layout/lib/assets/primeng_theme.css",
               "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.css"
             ],
             "scripts": []
